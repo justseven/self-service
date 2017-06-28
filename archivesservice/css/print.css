@@ -1,0 +1,54 @@
+/************
+     base.print
+************/
+*{
+    border: none;
+}
+.base-section{
+    width: 100%;
+}
+.base-section>li{
+    list-style: none;
+}
+.baseImgBox>img{
+    display: block;
+    margin-bottom: 20px;
+    width: 85.6mm;
+    height: 54mm;
+}
+.base-section>li>p{
+    display: none;
+}
+/************
+     ext.print
+************/
+.extImgBox{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.extImgBox>img{
+    display: block;
+    width: 297mm;
+    height: 210mm;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.extImgBox>p{
+    display: none;
+}
+/****************
+     space.print
+****************/
+.licenseWrap{
+    margin: 0 auto;
+    width: 100%;
+}
+.licenseWrap>li{
+  width: 100%;
+}
+.licenseWrap>li>img{
+    width: 100%;
+}

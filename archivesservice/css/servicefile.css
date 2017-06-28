@@ -1,0 +1,563 @@
+*{
+	box-sizing: border-box;
+	color: white;
+}
+.form_title{
+	background:url(../images/title.png) no-repeat;
+	width: 300px;
+	height: 54px;
+	position: absolute;
+	top: 25px;
+	left: 495px;
+}
+/*---------------------
+    main.html
+---------------------*/
+.main-wrap{
+	width: 100%;
+}
+.main-main{
+	width: inherit;
+	text-align: center;
+	margin-top: 320px;
+}
+.main-main>a{
+	display: inline-block;
+	width: 385px;
+	height: 230px;
+	margin: 0 50px;
+}
+.main-main>a>img{
+	width: inherit;
+}
+.main-footer{
+	width: inherit;
+	text-align: center;
+}
+/*---------------------
+    idcard.html
+---------------------*/
+.idCardWrap{
+	width: inherit;
+	height: 900px;
+	margin-top: 50px;
+}
+.idCardWrap>p{
+	width: inherit;
+	height: 100px;
+	line-height: 50px;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+.idCardWrap>p>span{
+	display: block;
+}
+.idCardFigure{
+	width: inherit;
+	height: 600px;
+	text-align: center;
+	margin-top: 30px;
+}
+.idCardBtn{
+	display:block;
+	width: inherit;
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+}
+/*---------------------
+    base/ext.html
+---------------------*/
+.wlist-wraper{
+	width: 100%;
+}
+.wlist-wraper>h2{
+	width: inherit;
+	text-align: center;
+	font-size: 30px;
+	color: yellow;
+	margin: 80px 0 40px;
+}
+.wlist-nav{
+	width: 450px;
+	height: 65px;
+	margin: 0 auto;
+	background: #1B3455;
+	border-radius: 30px;
+}
+.wlist-nav>li{
+	float: left;
+	width: 50%;
+	height: 65px;
+	text-align: center;
+}
+.btn{
+	display: block;
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	margin: 7.5px auto;
+	font-size: 30px;
+	font-weight: 500;
+}
+.btn-base{
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	background: #066687;
+}
+.btn-ext{
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	background: #066687;
+}
+.base-section{
+	background: url("../images/paneljieguo1.png") center bottom;
+	width: 750px;
+	height: 406px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+.base-section>li{
+	width: 365px;
+	height: 330px;
+	float: left;
+	margin: 40px 5px;
+}
+.base-section>li>img{
+	display: block;
+	width: 288px;
+	height: 181px;
+	border: 3px solid #fff;
+	padding: 5px;
+	margin: 30px auto;
+}
+.base-section>li>p{
+	width: inherit;
+	height: 50px;
+	margin-top: 25px;
+	font-size: 30px;
+	text-align: center;
+}
+.ext-section{
+	background: url("../images/paneljieguo1.png") center bottom;
+	width: 750px;
+	height: 406px;
+	margin: 30px auto;
+}
+.ext-section>li{
+	float: left;
+	width: 330px;
+	height: 300px;
+	margin: 49px 22px;
+}
+.ext-section>li>img{
+	width: 330px;
+	height: 233px;
+	display: block;
+	padding: 5px;
+	border: 3px solid #fff;
+	margin-top: 30px;
+}
+.ext-section>li>p{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+.paging-section{
+	margin:  0 auto;
+	width: 750px ;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	color: yellow;
+}
+.paging-section>span{
+	display: inline-block;
+	font-weight: bold;
+	color: yellow;
+}
+.btn-prev{
+	position: absolute;
+	top: 46%;
+	left: 10%;
+}
+.btn-next{
+	position: absolute;
+	top: 46%;
+	right: 10%;
+}
+.wlist-footer{
+	width: 746px;
+	height: 75px;
+	margin: 100px auto;
+	position: relative;
+}
+.ext-footer{
+
+}
+.btn-upload-base{
+	position: absolute;
+	left: 250px;
+}
+.btn-upload-ext{
+	position: absolute;
+	left: 250px;
+}
+.btn-print{
+	position: absolute;
+	right: 0px;
+}
+.btn-delete{
+	position: absolute;
+	left: 250px;
+}
+/*---------------------
+    tphoto.html
+---------------------*/
+.copy_box{
+	position:absolute;
+	width:100%;
+	color:#fff;
+	font-size:30px;
+	text-align:center;
+	line-height:80px;
+	font-weight:bold;
+	margin-top:70px;
+}
+.copy_box p span{
+	color:#f2ff52;
+}
+.savedPhoto{
+	width: 440px;
+	height: 280px;
+	margin: -220px 0  0 -80px;
+}
+.sfz_box{
+	width: 100%;
+	margin-top:40px;
+}
+.sfz_box a{
+	display: inline-block;
+	width: 245px;
+	height: 75px;
+}
+.sfz_box a>img{
+	width: inherit;
+}
+/*---------------------
+    pwait.html
+---------------------*/
+.pwaitWrap{
+	width: 100%;
+}
+.pwaitWrap>img{
+	display: block;
+	margin: 10px auto;
+}
+/*---------------------
+    key.html
+---------------------*/
+.keyWrap{
+	width: inherit;
+	height: 900px;
+	margin-top: 50px;
+}
+.keyWrap>p{
+	width: inherit;
+	height: 100px;
+	line-height: 50px;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+.keyWrap>p>span{
+	display: block;
+}
+.keyFigure{
+	width: inherit;
+	height: 500px;
+	text-align: center;
+	margin-top: 80px;
+}
+.keyBtn{
+	display: block;
+	width: inherit;
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+}
+.spaceWrap{
+	width:100%;
+}
+nav{
+	width: 100%;
+	height: 220px;
+}
+.navTabs{
+	width: 948px;
+	height: 220px;
+	margin: 20px auto  0;
+}
+.navTabs>li{
+	float: left;
+	width: 237px;
+	height: 110px;
+	line-height: 72px;
+	text-align: center;
+}
+.tabBg{
+	background: url("../images/frTab.png");
+}
+.tabBgSelected{
+	background: url("../images/frTabC.png");
+}
+.tabFont{
+	font-size: 25px;
+	font-weight: bold;
+}
+section{
+	width: 100%;
+}
+.contWrap{
+	width: inherit;
+	clear: both;
+	overflow: hidden;
+}
+.leftBtn,.rightBtn{
+	float: left;
+	width: 174px;
+	height: 100px;
+ }
+.leftBtn>a ,.rightBtn>a{
+	display: block;
+	width: 98px;
+	height: 98px;
+	margin: 286px auto;
+}
+.leftBtn>a{
+	background:url(../images/rollLeft.png) no-repeat;
+}
+.rightBtn>a{
+	background:url(../images/rollRight.png) no-repeat;
+}
+.mainContent{
+	float: left;
+	width: 932px;
+	height: 670px;
+	background: url("../images/pnlbmItembg.png") no-repeat;
+}
+.botContent{
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	color: #f2ff52;
+	font-size: 30px;
+	font-weight: bold;
+}
+.botContent>span{
+	color: #f2ff52;
+}
+.firstList,.fifthList{
+	width: 932px;
+	height: 670px;
+}
+.firstList>ul,.fifthList>ul{
+	margin: 60px auto;
+	background: url("../images/frline1.png")  no-repeat;
+	width: 887px;
+	height: 643px;
+	padding-top: 27px;
+	overflow: hidden;
+}
+.firstList>ul>li,.fifthList>ul>li{
+	width: 887px;
+	color: #002f59;
+	font-size: 22px;
+	font-weight: bold;
+}
+.firstList>ul>li:nth-child(2n-1),.fifthList>ul>li:nth-child(2n-1){
+	height: 58px;
+	line-height: 58px;
+}
+.firstList>ul>li:first-child,.fifthList>ul>li:first-child{
+	height: 50px;
+	line-height: 50px;
+}
+.firstList>ul>li:nth-child(2n),.fifthList>ul>li:nth-child(2n){
+	height: 48px;
+	line-height: 48px;
+	background-color:rgba(0,0,0,0.125);
+}
+.firstList>ul>li>span,.fifthList>ul>li>span{
+	text-align: center;
+	color: #002f59;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.firstList>ul>li>span:first-child,.fifthList>ul>li>span:first-child{
+	display: inline-block;
+	width: 40%;
+	height: inherit;
+	border-right: 1px solid #8db9db;
+}
+.firstList>ul>li>span:last-child,.fifthList>ul>li>span:last-child{
+	display: inline-block;
+	width: 59%;
+}
+.secondList,.fourthList,.sixthList{
+	width: 932px;
+	height: 670px;
+	padding: 70px 20px 0 20px;
+}
+.secondList>table,.fourthList>table,.sixthList>table{
+	width: 100%;
+}
+.secondList>table>tbody>tr,.fourthList>table>tbody>tr,.sixthList>table>tbody>tr,.thirdList>table>tbody>tr{
+	width: inherit;
+	height: 50px;
+}
+.secondList>table>tbody>tr:nth-child(2n),.fourthList>table>tbody>tr:nth-child(2n),.sixthList>table>tbody>tr:nth-child(2n),.thirdList>table>tbody>tr:nth-child(2n){
+	background-color:rgba(0,0,0,0.125);
+}
+.secondList>table>tbody>tr>td,.fourthList>table>tbody>tr>td,.sixthList>table>tbody>tr>td{
+	width: 24%;
+	text-align: center;
+	color: #002f59;
+	font-weight: bold;
+	font-size: 22px;
+}
+.thirdList{
+	width: 892px;
+	height: 670px;
+	padding: 70px 0 0 20px;
+	color: #002f59;
+	font-weight: bold;
+	font-size: 22px;
+}
+.thirdList>table{
+	width: inherit;
+}
+.thirdList>table>tbody>tr>td{
+	width: 33%;
+	text-align: center;
+	color: #002f59;
+	font-weight: bold;
+	font-size: 22px;
+}
+.seventhList{
+	width: 932px;
+	height: 670px;
+	padding: 70px 20px 0 20px;
+}
+.seventhList>table{
+	width: 100%;
+}
+.seventhList>table>tbody>tr{
+	width: inherit;
+	height: 50px;
+}
+.seventhList>table>tbody>tr{
+	width: inherit;
+	height: 50px;
+}
+.seventhList>table>tbody>tr:nth-child(2n){
+	background-color:rgba(0,0,0,0.125);
+}
+.seventhList>table>tbody>tr>td{
+	width: 49%;
+	text-align: center;
+	color: #002f59;
+	font-weight: bold;
+	font-size: 22px;
+}
+.eighthList{
+	width: 932px;
+	height: 670px;
+}
+.licenseWrap{
+	margin: 0 auto;
+	max-width: 450px;
+	max-height: 670px;
+}
+.licenseWrap>li{
+	max-height: 670px;
+}
+.licenseWrap>li>img{
+	display: block;
+	width: 100%;
+	max-height: 600px;
+	transform : rotate(90deg);
+}
+.licenseWrap>li>p{
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+}
+.frUpload{
+	position: absolute;
+	left: 170px;
+	bottom: 0px;
+	width: 170px;
+}
+.frUpload>img{
+	width: 100%;
+}
+.frPrint{
+	position: absolute;
+	left: 400px;
+	bottom: 0px;
+	width: 170px;
+}
+.frPrint>img{
+	width: 100%;
+}
+.frDelete{
+	position: absolute;
+	right: 170px;
+	bottom: 0px;
+	width: 170px;
+}
+ .frDelete>img{
+	 width: 100%;
+ }
+.listMain li{
+	width: 99%;
+	height:35px;
+	line-height:35px;
+	font-family:"Microsoft YaHei", "微软雅黑",STXihei,"华文细黑",serif;
+	color:#fff;
+	font-weight:normal;
+	text-align: left;
+	padding-left: 1%;
+	cursor: pointer;
+	font-size: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.listMain li:nth-child(2n-1){
+	margin-left: 2.3%;
+}
+.listMain li:nth-child(2n){
+	width: 94.4%;
+	margin-left: 2.3%;
+	background-color:rgba(0,0,0,0.125);
+}
+.layui-layer-dialog .layui-layer-content{
+	color: black;
+}
+#passWord{
+	width: 	200px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	color: #000000;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #e05f00;
+}

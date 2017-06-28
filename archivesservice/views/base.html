@@ -1,0 +1,22 @@
+<div class="wlist-wraper">
+    <h2>个人办事档案</h2>
+    <ul class="wlist-nav">
+        <li>
+            <a class="btn btn-base" href="#base">基&nbsp;本</a>
+        </li>
+        <li>
+            <a class="btn" href="#ext">扩&nbsp;展</a>
+        </li>
+    </ul>
+        <ul class="base-section">
+        <li class="baseImgBox" id="{{i.stPersonalDocument}}" ng-click="checkedIt(i.stPersonalDocument)" ng-repeat="i in personalData ">
+            <img   ng-src="{{configUrl+i.imageUrl}}" alt=""/>
+            <p>{{i.stFilename}}</p>
+        </li>
+    </ul>
+    <div class="wlist-footer">
+        <a class="btn-upload-base" ng-click="uploadNewPhoto()"><img src="images/btn_upload.png" alt=""/></a>
+        <a class="btn-print" ng-if="btnPrint" ng-click="printBasePhoto()"><img src="images/btn_print.png" alt=""/></a>
+        <a class="btn-delete" ng-if="btnDeleted" ng-click="deletedPhoto()"><img src="images/btn_del.png" alt=""/></a>
+    </div>
+</div>

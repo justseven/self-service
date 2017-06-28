@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+.form_title {
+    width: 150px;
+    height: 45px;
+    background:url(../images/form_title.png) no-repeat;
+    position: absolute;
+    top: 25px;
+    left: 565px;
+}
+/*---------------------
+    chooseForm.html
+---------------------*/
+.chooseFormWrap{
+    width: 100%;
+    position: relative;
+}
+.chooseFormWrap>a{
+    position: absolute;
+    top: 47%;
+    display: block;
+    width: 10%;
+}
+.chooseFormWrap>a:first-child{
+    left: 45px;
+}
+.chooseFormWrap>a:nth-child(2){
+    right: 45px;
+}
+.btn-arrow>img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.searchBox{
+    width: 100%;
+    height: 120px;
+}
+.searchList{
+    float: left;
+    background: url("../images/search_l.png") no-repeat;
+    width: 372px;
+    height: 58px;
+    font-size: 22px;
+    line-height: 58px;
+    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+    text-align: left;
+    padding: 0 44px;
+    margin-left: 454px;
+    margin-top: 31px;
+}
+.searchBtn{
+    float: left;
+    background: url("../images/search_r.png") no-repeat;
+    width: 141px;
+    height: 62px;
+    line-height: 62px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 29px;
+    font-size: 22px;
+    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+    text-align: center;
+    font-weight: bold;
+    color: #a7aab0;
+}
+.chooseFormBox{
+    width: 100%;
+    height: 785px;
+    padding: 0 10%;
+    margin-top: 0px;
+}
+.chooseFormBox li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.chooseFormBox li>a{
+    display: block;
+    width:243px;
+    height:302px;
+    border:12px solid #7484a8;
+    border-radius:10px;
+    margin: 0 auto;
+}
+.chooseFormBox li>a>img{
+    display: block;
+    width:216px;
+    height:275px;
+}
+.chooseFormBox li>p{
+    margin: 20px auto 30px;
+    font-size: 24px;
+    color: white;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.choosePages{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: yellow;
+    font-weight: bold;
+}
+.choosePages>span{
+    color: yellow;
+}
+/*---------------------
+    note.html
+---------------------*/
+.noteWrap{
+    width: 100%;
+    height: 950px;
+}
+.noteMain{
+    width: 100%;
+    margin-top: 100px;
+    clear: both;
+    overflow: hidden;
+}
+.noteMain>div{
+    float: left;
+}
+.stepExplain{
+    width: 400px;
+    height: 500px;
+    background-color: #9dbbd7;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-top: 105px;
+    color: white;
+}
+.stepExplain>h3{
+    width: 100%;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 35px;
+}
+.stepExplain>p{
+    width: 100%;
+    height: 400px;
+    font-size: 30px;
+    padding: 0 10px;
+    line-height: 60px;
+}
+.stepExplain>p>span{
+    display: block;
+}
+.formFigure{
+    width: 500px;
+    height: 710px;
+    margin-left: 150px;
+}
+.formFigure>img{
+    width: 500px;
+    height: 710px;
+    display: block;
+}
+.noteFoot{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+.noteFoot>a{
+    display: inline-block;
+    width: 250px;
+    height: 80px;
+}
+.noteFoot>a:first-child{
+    margin: 0 80px 0 350px;
+}
+.noteFoot>a>img{
+    width: 100%;
+}
+/*---------------------
+    idCard.html
+---------------------*/
+.idCardWrap{
+    width: inherit;
+    height: 900px;
+    margin-top: 50px;
+}
+.idCardWrap>p{
+    width: inherit;
+    height: 100px;
+    line-height: 50px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.idCardWrap>p>span{
+    display: block;
+}
+.idCardFigure{
+    width: inherit;
+    height: 600px;
+    text-align: center;
+    margin-top: 30px;
+}
+.idCardBtn{
+    display: block;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    margin: 50px auto;
+}
+/*---------------------
+    tphoto.html
+---------------------*/
+.copy_box{
+    position:absolute;
+    width:100%;
+    color:#fff;
+    font-size:30px;
+    text-align:center;
+    line-height:80px;
+    font-weight:bold;
+    margin-top:70px;
+}
+.copy_box p span{
+    color:#f2ff52;
+}
+.savedPhotoBox{
+
+}
+.savedPhoto{
+    width: 440px;
+    height: 280px;
+    margin: -220px 0  0 -80px;
+}
+/*---------------------
+    fillForm.html
+---------------------*/
+.fillFormWrap{
+    width: inherit;
+    height: 924px;
+    margin-top: 50px;
+}
+.fillFormWrap>div{
+    float: left;
+}
+.fillFormMain{
+    width: 800px;
+    height: 860px;
+    border: 3px solid #69a9c2;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+.htmlType{
+    width: 100%;
+    height: inherit;
+}
+.wordType{
+    width: 100%;
+    height: inherit;
+}
+.fillFormSide{
+    width: 250px;
+    height: inherit;
+    position: relative;
+}
+.fillFormSide>a{
+    position: absolute;
+    display: block;
+    width: 250px;
+}
+.fillFormSide>a:first-child{
+    top: 35%;
+}
+.fillFormSide>a:nth-child(2){
+    top: 55%;
+}
+/*---------------------
+    pwait.html
+---------------------*/
+.pwaitWrap{
+    width: 100%;
+}
+.pwaitWrap>img{
+    display: block;
+    margin: 10px auto;
+}
+/*----------------
+      print
+----------------*/
+#formWrap{
+    padding: 0 100px;
+}
+#formWrap1{
+    width: 800px;
+    padding: 0 100px;
+    color: #000;
+    background: #fff;
+    box-sizing: border-box;
+}
+#formWrap1>p{
+    text-align: left;
+}
+#formWrap1>p>span{
+    color: #000;
+}
+table{
+    width: 611px;
+}
+table tbody tr td{
+    color: #000;
+}

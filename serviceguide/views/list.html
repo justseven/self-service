@@ -1,0 +1,20 @@
+<div class="list-wrap">
+    <ul class="list-main">
+        <li class="list-side"><a class="btn btn-left" ng-click="prevPage()"></a></li>
+        <li class="list-section">
+            <p>事项名称</p>
+            <ul>
+                <li ng-repeat="i in currentArr" ng-click="inOrderTime(i)">
+                    <a href="#content/{{i.stItemNo}}">{{i.stItemName}}</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list-side"><a class="btn btn-right" ng-click="nextPage()"></a></li>
+    </ul>
+    <div class="list-foot">
+        <p class="pages-box"><span>{{currentPage}}/{{totalPages}}</span></p>
+        <a href="#main">
+            <img src="images/{{returnUpImg}}.png"  alt=""/>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="materialCopyApp">
+<head>
+    <meta charset="utf-8">
+    <title>材料复印</title>
+    <link rel="stylesheet" href="css/copy.css" />
+    <link rel="stylesheet" href="../libs/common/css/common.css">
+    <link rel="stylesheet" href="../libs/common/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../libs/layer/skin/default/layer.css">
+</head>
+
+<body>
+<div class="content_box_form" ng-controller="headController">
+    <div ng-include="'../libs/common/views/head.html'"></div>
+    <ng-view></ng-view>
+</div>
+<script src="../libs/angularjs/1.5.8/angular.js"></script>
+<script src="../libs/angularjs/1.5.8/angular-route.js"></script>
+<script src="../libs/jquery/jquery-1.8.1.min.js"></script>
+<script src="../libs/common/js/init-config-msg.js"></script>
+<script src="../libs/common/js/self-mac-tools.js"></script>
+<script src="app.js"></script>
+<script src="../libs/common/controller/head.js"></script>
+<script src="controllers.js"></script>
+<script src="routers.js"></script>
+<script src="../libs/layer/layer.js"></script>
+<script src="../libs/common/js/self-mac-timeback.js"></script>
+</body>
+
+</html>
+

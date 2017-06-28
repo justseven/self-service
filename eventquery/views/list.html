@@ -1,0 +1,26 @@
+<div class="inquiry_box">
+	<p><span>办理进度详情</span></p>
+	<div class="details">
+		<table class="conDetails">
+			<tbody>
+				<tr ng-repeat="i in list">
+					<td class="applyNo">
+						{{i.No+1}}、办理编号：
+						<a href="#/detail/{{i.stApplyNo}}">{{i.stApplyNo}}</a>
+						<span class="apply">办理事项：<span>{{i.stItemName}}</span></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br/>
+		<br/>
+		<div class="page">
+			<span>{{now_page}}</span>/<span>{{total_page}}</span>
+		</div>
+	</div>
+	<a class="abtn aleft" ng-click="left()">&nbsp;</a>
+	<a class="abtn aright" ng-click="right()">&nbsp;</a>
+	<div class="btn_back">
+		<a ng-click="back()"><img src="images/back.png" /></a>
+	</div>
+</div>

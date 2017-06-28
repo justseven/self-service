@@ -1,0 +1,19 @@
+<div class="chooseFormWrap">
+    <a class="btn-arrow" ng-show="paging" ng-click="previousPage()"><img src="images/rollLeft.png" alt=""/></a>
+    <a class="btn-arrow" ng-show="paging" ng-click="nextPage()"><img src="images/rollRight.png" alt=""/></a>
+    <div class="searchBox">
+        <input ng-model="formName" type="search" id="searchList" class="searchList" placeholder="请输入表格名称搜索"/>
+        <a class="searchBtn" ng-click="searchItem()">搜索</a>
+    </div>
+    <ul class="chooseFormBox clearfix">
+        <li ng-repeat="i in formList">
+            <a href="#/note/{{i.stFormId}}/{{i.nmType}}">
+                <img ng-src="{{configUrl+i.blSmallFileImageUrl}}"/>
+            </a>
+            <p>{{i.stFormName}}</p>
+        </li>
+    </ul>
+    <div class="choosePages" ng-show="paging">
+        <span>{{currentPage}}</span>/<span>{{totalPages}}</span>
+    </div>
+</div>

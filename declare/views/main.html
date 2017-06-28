@@ -1,0 +1,97 @@
+<div>
+    <ul class="tab-title">
+        <li>
+            <a ng-click="change_tab(0)" ng-class="hover_p">个人申报</a>
+        </li>
+        <li>
+            <a ng-click="change_tab(1)" ng-class="hover_l">法人申报</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="person" ng-show="showPerson">
+            <ul>
+                <li>
+                    <span class="control fl">统一审批编码：</span><span>{{togetherCode}}</span>
+                </li>
+                <li class="clear">
+                    <div class="person-li-one"><span class="control">申请事项名称：</span><span>{{itemName}}</span></div>
+                    <div class="person-li-one"><span>事项小类名称：</span><span>{{stSmallItemName}}</span></div>
+                </li>
+                <li class="clear">
+                    <span class="control fl" ><s>*</s>申请人姓名：</span><input class="applyUserName max-len fl" type="text" ng-model="name_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl"><s>*</s>申请人证件号：</span>
+                    <select ng-model="type_p" ng-options="i.name as i.name for i in ID_type_p" class="fl nmIdenTityType"></select>
+                    <input class="mid-len fl idnum" type="text" ng-model="ID_num_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">联系人姓名：</span><input class="max-len fl" type="text" ng-model="name_con_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">联系人证件号：</span>
+                    <select class="fl" ng-model="type_con_p" ng-options="i.name as i.name for i in ID_type_p"></select>
+                    <input class="mid-len fl" type="text" ng-model="ID_num_con_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl"><s>*</s>手机号码：</span><input class="min-len fl phone" type="text" ng-model="mobile_p"/><span class="fl m-left-80">固定电话：</span><input class="min-len fl" type="text" ng-model="telephone_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">电子邮箱：</span><input class="min-len fl" type="text" ng-model="email_p"/><span class="fl m-left-80">传真号码：</span><input class="min-len fl" type="text" ng-model="fax_num_p"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">联系地址：</span><textarea class="fl" cols="10" rows="5" ng-bind="contentAddress"></textarea>
+                </li>
+                <li class="clear">
+                    <span class="control fl">申请内容：</span><textarea class="fl" cols="10" rows="5" ng-bind="applyContent_p"></textarea>
+                </li>
+            </ul>
+            <div class="tab-footer">
+                <a ng-click="submit_p()">下一步</a>
+            </div>
+        </div>
+        <div class="legal-person" ng-show="showLPerson">
+            <ul>
+                <li>
+                    <span class="control fl">统一审批编码：</span><span>{{togetherCode}}</span>
+                </li>
+                <li class="clear">
+                    <div class="person-li-one"><span class="control">申请事项名称：</span><span>设立艺术品经营单位的备案</span></div>
+                    <div class="person-li-one"><span>事项小类名称：</span><span>设立艺术品经营单位的备案</span></div>
+                </li>
+                <li class="clear">
+                    <span class="control fl"><s>*</s>申请单位名称：</span><input class="applyUserName max-len fl" type="text" ng-model="name_l"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl"><s>*</s>申请单位证件号：</span>
+                    <select ng-model="type_l" ng-options="i.name as i.name for i in ID_type_l" class="fl nmIdenTityType"></select>
+                    <input class="mid-len fl idnum" type="text" ng-model="ID_num_l"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">单位地址：</span><textarea class="fl" cols="10" rows="5" ng-bind="companyAddress"></textarea>
+                </li>
+                <li class="clear">
+                    <span class="control fl">联系人姓名：</span><input class="max-len fl" type="text" ng-model="name_con_l"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">联系人证件号：</span>
+                    <select class="fl" ng-model="type_con_l" ng-options="i.name as i.name for i in ID_type_p"></select>
+                    <input class="mid-len fl" type="text" ng-model="ID_num_con_l"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl"><s>*</s>手机号码：</span><input class="min-len fl phone" type="text" ng-model="mobile_l"/><span class="fl m-left-80">固定电话：</span><input class="min-len fl" type="text" ng-model="telephone_l"/>
+                </li>
+                <li class="clear">
+                    <span class="control fl">电子邮箱：</span><input class="min-len fl" type="text" ng-model="email_l"/><span class="fl m-left-80">传真号码：</span><input class="min-len fl" type="text" ng-model="fax_num_l"/>
+                </li>
+
+                <li class="clear">
+                    <span class="control fl">申请内容：</span><textarea class="fl" cols="10" rows="5" ng-bind="applyContent_l"></textarea>
+                </li>
+            </ul>
+            <div class="tab-footer">
+                <a ng-click="submit_l()">下一步</a>
+            </div>
+        </div>
+    </div>
+</div>

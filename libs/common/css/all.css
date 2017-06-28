@@ -1,0 +1,76 @@
+/* CSS Document */
+/*首页头部*/
+.content_box{ background:url(../images/bg1280x1024.jpg) no-repeat; width:1280px; height:1024px;}
+.title_box{ height:73px; line-height:73px; position:relative;}
+.timimg{  position:absolute;  top: 50px;  left:50px; width: 80px; height: 80px}
+.timimg>span{
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0.5;
+    color: white;
+}
+.logo{ width:338px; height:43px;  float:left;}
+.logo>img{  width: 100%;  }
+.time_box{ float:right; display:block;color:#fff; font-size:24px; padding:0px;}
+.time_box span{ padding-right:20px;}
+.name_box{ background:url(../images/home_title.png) no-repeat center 20px; height:114px;}
+
+/*首页模块*/
+.mokuai_box{ width:1080px; margin:0 auto;}
+.mokuai_box ul li{ background:#29a2e7;margin:20px; float:left; text-align:center;}
+.li_wd500{ width:500px; height:230px;}
+.li_wd230{ width:230px; height:230px;}
+.li_wd500 p,.li_wd230 p{ padding:15px 0px 0px 15px; color:#fff; text-align:left; font-size:16px;}
+.li_wd500 img,.li_wd230 img{ margin:10px 0px;}
+.li_wd500 img{padding:0px 190px;}
+.li_wd230 img{padding:0px 55px;}
+.li_wd500 span,.li_wd230 span{ text-align:center; display:block; font-size:30px; color:#fff;}
+/*首页3*3布局*/
+.li_wd333{ width:316px; height:230px;}
+.li_wd333 p{ padding:15px 0px 0px 15px; color:#fff; text-align:left; font-size:16px;}
+.li_wd333 img{ margin:10px 0px;}
+.li_wd333 img{padding:0px 97px;}
+.li_wd333 span{ text-align:center; display:block; font-size:30px; color:#fff;}
+/*自助填表-选择表*/
+.content_box_form{background:url(../images/inner_bg_1280x1024.jpg) no-repeat; width:1280px; height:1023px; overflow:hidden; position:relative;}
+.choose_form_box{position:absolute; width:100%;}
+.choose_form_box ul{ padding:0px 10%;}
+.choose_form_box ul li{ width:50%; height:305px; float:left; margin:60px 0px 20px 0px; text-align:center;}
+.choose_form_box ul li img{ width:240px; height:305px;border:15px solid #7484a8; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;}
+.choose_form_box ul li span{ display:block;}
+.choose_form_box ul li span a{color:#fff; font-size:24px; line-height:48px;}
+/*.button_box{ display:block; position:absolute;}*/
+.home_button{display:block; float:left; width:610px; text-align:left; padding:50px 0px 0px 30px;}
+.back_button{display:block; z-index:999999999999;position:absolute;width:75px; text-align:right;right:0;top:1.25%;right:2.5%;}
+
+/*样本展示-开始填表*/
+.yangbiao_box{ position:absolute;}
+.yangbiao_div{ float:left;  width:500px; height:710px; margin:100px 0px 0px 150px;}
+.desripttion_box{ float:right; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; background:#9dbbd7; width:400px; height:500px; margin:200px 150px 0px 0px;}
+.desripttion_box span{ display:block; font-size:30px; font-weight:bold; color:#fff; padding:40px 0px 10px 0px; text-align:center;}
+.desripttion_box p{ line-height:48px; color:#fff; font-size:30px; padding:20px 0px 0px 50px;}
+.start_button{ clear:both; text-align:center; height:115px; width:1280px; padding-top:40px;}
+
+/*扫描身份证*/
+.scan_card_pic{ margin-top:30px; text-align:center; width:1280px;}
+#scan_card_bg { background:url(../images/scan_bg.png) no-repeat center center; height:350px;}
+.scaning_button{ margin:0px 0px  0px 520px; padding-top:120px;}
+.sfz_box{ margin-top:40px;}
+.sfz_box a{ margin:0px 100px;}
+
+/*填表*/
+.form_box{ color:#333; position:absolute;}
+.form_box_left{ float:left; width:680px;background:#fff; padding:55px;}
+.form_box_left table{width:100%;  border-top:2px solid #333; border-left:2px solid #333;}
+.form_box_left table td{ text-align:center; line-height:28px; font-size:16px; border-bottom:2px solid #333; border-right:2px solid #333;}
+.form_box_left table td input{ border:none; text-align:center;}
+.form_box_right{ padding:350px 930px;}
+.form_box_right a img{ padding-bottom:100px;}
+#input_60 input{ width:60px; text-align:center;}
+.quanxian{ text-align:left; padding:5px;}
+.card_box{ margin-top:10px;}
+.card_box img{ margin:0px 25px;}
+
+
+
+

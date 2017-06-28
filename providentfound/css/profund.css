@@ -1,0 +1,175 @@
+.form_title{
+    z-index:2;
+    position:absolute;
+    background:url(../images/title_gjj.png) no-repeat center 35px;
+    margin:0 auto;
+    height:80px;
+    text-align:center;
+    width:100%;
+}
+.main{
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+.main p{
+    width: 417px;
+    height: 244px;
+    background: url("../images/rilibg.png") no-repeat;
+    color: white;
+    line-height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
+.errorView{
+    width: 100%;
+}
+.errorView>p{
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+    font-size: 40px;
+}
+.errorView>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+.correntView{
+    width: 100%;
+}
+.infoListBox{
+    width: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+.printBtn{
+    position: absolute;
+    top: 670px;
+    left: 517px;
+}
+.ListNav{
+    width: inherit;
+    overflow: hidden;
+    margin: 120px 235px 0px;
+}
+.ListNav>li{
+    float: left;
+    background:url(../images/optionback.png) no-repeat;
+    width: 298px;
+    height: 114px;
+    text-align: center;
+    cursor:pointer;
+    margin-left: -30px;
+    text-indent:-30px;
+    color:#fff;
+    line-height:72px;
+}
+.bgChange{
+    background:url(../images/optioncurback.png) no-repeat;
+}
+.ListNav>li:first-child{
+    margin-left: 0;
+}
+.ListNav>li>a{
+    display: block;
+    width: 100%;
+    font-size:30px;
+    line-height:80px;
+    font-weight:bold;
+}
+.baseTable{
+    width: 840px;
+    margin-left: 220px;
+    color: white;
+}
+.baseTable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.baseTable caption{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+.baseTable th{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background-color: #2D8DDA;
+}
+.baseTable td{
+    border: 1px solid #153A65;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.baseTableMid tr td,.baseTableBot tr td{
+    width: 140px;
+}
+.baseDetailTable{
+    width: 840px;
+    height: 443px;
+    margin-left: 220px;
+    color: white;
+    position: relative;
+}
+.baseDetailTable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.baseDetailTable caption{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+.baseDetailTable th{
+    width: 17.5%;
+    height: 36px;
+    line-height: 36px;
+    background-color: #2D8DDA;
+}
+.baseDetailTable th:last-child{
+    width: 30%;
+}
+.baseDetailTable td{
+    border: 1px solid #153A65;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.baseDetailTable td:nth-child(5n){
+    line-height: 18px;
+}
+.prevPage{
+    position: absolute;
+    top: 175px;
+    left: -130px;
+}
+.nextPage{
+    position: absolute;
+    top: 175px;
+    right: -130px;
+}
+.displayPage{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 0px;
+}
+.printState{
+    width: 100%;
+}
+.printState>img{
+    display: block;
+    margin: 10px auto;
+}

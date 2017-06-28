@@ -1,0 +1,208 @@
+.form_title{ z-index:2; position:absolute; background:url(../images/cailiao.png) no-repeat center 35px; margin:0 auto; height:80px; text-align:center; width:100%;}
+.form_title2{ z-index:2; position:absolute; background:url(../images/title.png) no-repeat center 35px; margin:0 auto; height:80px; text-align:center; width:100%;}
+.copy_box{ position:absolute; width:100%; color:#fff; font-size:30px; text-align:center; line-height:80px; font-weight:bold; margin-top:70px;}
+.copy_box p{text-align:center; line-height:60px;}
+.copy_box p.fwn{font-weight:normal;}
+.copy_box p span{ color:#f2ff52;}
+
+.copy_box blockquote{
+	padding:5% 0;
+}
+.copy_box blockquote img{
+	vertical-align:middle;
+}
+.btnOnly{
+	padding-top:50%;
+}
+
+#reg_btn{
+	background:url(../images/Num.png) top center no-repeat;
+	width:245px;
+	height:75px;
+	border:none;
+	cursor:pointer;
+	color:#fff;
+	font-weight:bold;
+	font-size:40px;
+	font-family:"Microsoft YaHei", "微软雅黑",STXihei,"华文细黑",serif;
+}
+
+
+.sm{
+	background:url(../images/Printloading.png) top center no-repeat;
+	width:1280px;
+	height:1024px;
+}
+
+.zheng{
+	background:url(../images/zhengmian.png) top center no-repeat;
+	width:478px;
+	height:371px;
+	margin:0 auto;
+}
+.fan{
+	background:url(../images/fanmian.png) top center no-repeat;
+	width:478px;
+	height:371px;
+	margin:0 auto;
+}
+.show{
+	background:url(../images/otherback1.png) top center no-repeat;
+	width:504px;
+	height:403px;
+	margin:0 auto;
+}
+
+.zhengfan{
+	width:77.5%;
+	margin:0 auto;
+	margin-top:60px;
+	border-collapse:collapse;
+}
+
+.zhengfan td{
+	vertical-align:middle;
+	text-align:center;
+}
+.zhengfan th{
+	vertical-align:middle;
+}
+
+
+.zhengfan th p{
+	padding-top:5%;
+}
+.chooseBox{
+	width: 100%;
+}
+.chooseBox li{
+	margin-bottom: 20px;
+}
+.chooseBox li:first-child>img{
+	width: 198mm;
+	height: 140mm;
+}
+.additionalCopies{
+	overflow: hidden;
+	clear: both;
+	margin-left: 500px;
+}
+.additionalCopies>a{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top: 20px;
+}
+.additionalCopies>a>img{
+	width: 100%;
+}
+.additionalCopies>span{
+	display: inline-block;
+	float: left;
+	width: 105px;
+	height: 105px;
+	background:url(../images/num1.png) center center no-repeat;
+	margin: 0 30px;
+}
+.pay{
+	background:url(../images/while_bmg.png) no-repeat;
+	width: 723px;
+	height: 622px;
+	margin: 20px auto;
+	padding-left: 80px;
+}
+.pay>p>span{
+	color:#457895;
+	font-size:16px;
+	font-weight:normal;
+	padding-left:5%;
+}
+.copy_box p.fwn span{
+	color:#00d8ff;
+	font-size:50px;
+}
+.payType{
+	width:190px;
+	height:550px;
+	position:absolute;
+	top:300px;
+	left:300px;
+	text-align:center;
+}
+.payType li{
+	color:#949694;
+	font-weight:bold;
+	margin-bottom:50px;
+}
+.qrCodeDisplay{
+	width: 535px;
+	height:480px;
+	margin-left:190px;
+	padding-top:45px;
+}
+.black{
+	color:#000;
+	font-weight:normal;
+}
+.qrCodeBox{
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid #000000;*/
+	position: relative;
+	margin-top: 110px;
+	margin-left: 200px;
+}
+.qrCodeIcon{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 70px;
+	left: 70px;
+}
+.qrCodeIcon + img {
+	width: 200px;
+	height: 200px;
+}
+.paySucess{
+	background-color:rgba(255,255,255,0.75);
+	margin:0 auto;
+	border-radius:10px;
+	width:60%;
+	margin-top:20%;
+	height:250px;
+	color:#000;
+	font-weight:normal;
+}
+.paySucess>p {
+	padding:25px 0;
+}
+.paySucess>p span{
+	font-size:45px;
+	padding:0 2.5%;
+	color:#007ee5;
+}
+.fenshu{
+	background:url(../images/num1.png) center center no-repeat;
+	width: 105px;
+	height: 105px;
+}
+.savedPhoto{
+	width: 440px;
+	height: 280px;
+	margin: -220px 0  0 -80px;
+}
+.printState{
+	width: 100%;
+}
+.printState>img:first-child{
+	margin-top: 15%;
+}　　
+ #page1{
+	 width:2100mm;
+	 height:2970mm;
+ }
+#page1>img{
+	display:block;
+	width:100%;
+}

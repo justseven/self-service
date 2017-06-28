@@ -1,0 +1,47 @@
+<div class="upload-wrap-box" ng-if="normalStatus">
+    <div class="upload-box" >
+        <ul class="upload-wrap" id="upload-wrap">
+            <li class="upload-list clear" ng-repeat="i in materialList" id="{{i.stStuffId}}">
+
+                <div class="popBefore clear">
+                    <div class="list-name fl">
+                        <span>{{i.stStuffName}}</span>
+                    </div>
+                    <div class="upload-btn fl">
+                        <a class="uploadBtn" ng-click="uploadFileShow(i.stStuffId)">上传文件</a>
+                        <a class="cancelBtn" ng-click="uploadFileHide(i.stStuffId)">取消</a>
+                        <a class="alterBtn" ng-click="alterFile(i.stStuffId)">修改</a>
+                    </div>
+                </div>
+                <div class="popUpload">
+                    <div class="clear">
+                        <div class="uploadImage fl" ng-click="uploadByPhoto(i.stStuffId)">拍照上传</div>
+                        <div class="uploadImage fl" ng-click="uploadByUpan(i.stStuffId)">U盘上传</div>
+                    </div>
+                    <p> * 温馨提示：上传文件数量仅限1个，如有多个文档，建议压缩打包后上传。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="upload-footer">
+        <a ng-click="submitAll()">提交材料</a>
+    </div>
+</div>
+<div class="copy-box" ng-if="popPhoto">
+    <p><span>其他材料复印</span></p>
+    <p class="fwn">{{hint}}</p>
+    <div class="scan_card_pic" id="scan_card_bg">
+        <div class="scaning_button">
+            <a ng-click="saveMaterial()"><img src="images/scaning_button.png" width="106" height="106" alt=""/></a>
+        </div>
+        <div class="savedPhotoBox" ng-show="savePhoto">
+            <img src="{{savedPhoto}}" class="savedPhoto" />
+        </div>
+
+    </div>
+    <div class="sfz_box">
+        <img ng-show="defaultDisplay" src="../libs/common/images/cl.gif" width="700" height="300" alt=""/>
+        <a ng-show="defaultHidden" ng-click="reload()"><img src="images/btn_cancel.png" width="245" height="75" alt="" /></a>
+        <a ng-show="defaultHidden" ng-click="photoUpload()"><img src="images/btn_save.png" width="245" height="75" alt="" /></a>
+    </div>
+</div>

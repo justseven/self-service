@@ -1,0 +1,40 @@
+<div class="inquiry_box">
+	<p><span>办理进度详情</span></p>
+	<div class="details">
+		<table class="conDetails">
+			<tr>
+				<th width="20%">申请人：</th>
+				<td width="80%">{{list.stName}}</td>
+			</tr>
+			<tr>
+				<th>办件编号：</th>
+				<td>{{list.stApplyNo}}</td>
+			</tr>
+			<tr>
+				<th>对象名称：</th>
+				<td>{{list.stUnit}}</td>
+			</tr>
+			<tr>
+				<th>办理事项：</th>
+				<td>{{list.stItemName}}</td>
+			</tr>
+			<tr>
+				<th>申请时间：</th>
+				<td>{{list.stApply | date:'yyyy-MM-dd HH:mm'}}</td>
+			</tr>
+			<tr>
+				<th>当前状态：</th>
+				<td>{{list.stFinalState}}</td>
+			</tr>
+			<tr>
+				<th>办结时间：</th>
+				<td>{{list.stFinish | date:'yyyy-MM-dd HH:mm'}}</td>
+			</tr>
+		</table>
+		<br/>
+		<br/>
+	</div>
+	<div class="btn_back">
+		<a ng-click="back()"><img src="images/back.png" /></a>
+	</div>
+</div>

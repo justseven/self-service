@@ -1,0 +1,28 @@
+<div class="copy_box">
+    <p><span>身份证复印</span></p>
+    <p class="fwn">{{hint}}</p>
+    <div class="scan_card_pic" id="scan_card_bg">
+        <div ng-show="frontSide">
+            <div class="scaning_button">
+                <a ng-click="savedFront()"><img src="images/scaning_button.png" width="106" height="106" alt=""/></a>
+            </div>
+            <div class="savedPhotoBox" ng-show="saveStatusFront">
+                <img src="{{idCardFront}}" class="savedPhoto" />
+            </div>
+        </div>
+        <div ng-show="reverseSide">
+            <div class="scaning_button">
+                <a ng-click="savedReverse()"><img src="images/scaning_button.png" width="106" height="106" alt=""/></a>
+            </div>
+            <div class="savedPhotoBox" ng-show="saveStatusReverse">
+                <img src="{{idCardReverse}}" class="savedPhoto" />
+            </div>
+        </div>
+
+    </div>
+    <div class="sfz_box">
+        <img ng-show="defaultDisplay" src="../libs/common/images/sfz.gif" width="700" height="300" alt=""/>
+        <a ng-show="defaultHidden" ng-click="prev()"><img src="images/btn_cancel.png" width="245" height="75" alt="" /></a>
+        <a ng-show="defaultHidden" ng-click="next()"><img src="images/btn_save.png" width="245" height="75" alt="" /></a>
+    </div>
+</div>

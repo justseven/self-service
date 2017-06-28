@@ -1,0 +1,29 @@
+<div class="wlist-wraper">
+    <h2>个人办事档案</h2>
+    <ul class="wlist-nav">
+        <li>
+            <a class="btn" href="#base">基&nbsp;本</a>
+        </li>
+        <li>
+            <a class="btn btn-ext" href="#ext">扩&nbsp;展</a>
+        </li>
+    </ul>
+    <div >
+        <ul class="ext-section">
+            <li class="extImgBox" ng-repeat="i in curData" id="{{i.stPersonalDocument}}page1">
+                <img id="{{i.stPersonalDocument}}" ng-click="checkedIt(i.stPersonalDocument)" ng-src="{{configUrl+i.imageUrl}}"/>
+                <p>{{i.stFilename}}</p>
+            </li>
+        </ul>
+        <div class="paging-section" ng-show="pagingDisplay">
+            <span class="btn-prev" ng-click="prevPage()"><img src="images/rollLeft.png" alt=""/></span>
+            <span>{{curPage}}/{{totPages}}</span>
+            <span class="btn-next" ng-click="nextPage()"><img src="images/rollRight.png" alt=""/></span>
+        </div>
+    </div>
+    <div class="wlist-footer ext-footer">
+        <a class="btn-upload-ext" ng-click="uploadNewPhoto()"><img src="images/btn_upload.png" alt=""/></a>
+        <a class="btn-print"  ng-if="btnDeleted" ng-click="printBasePhoto()"><img src="images/btn_print.png" alt=""/></a>
+        <a class="btn-delete" ng-if="btnDeleted" ng-click="deletedPhoto()"><img src="images/btn_del.png" alt=""/></a>
+    </div>
+</div>

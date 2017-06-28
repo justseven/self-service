@@ -1,0 +1,14 @@
+<div class="department-wrap">
+    <a class="icon icon-left" ng-show="icon" ng-click="prevPage()">
+        <img src="images/btn_left.png" alt=""/>
+    </a>
+    <a class="icon icon-right" ng-show="icon" ng-click="nextPage()">
+        <img src="images/btn_right.png" alt=""/>
+    </a>
+    <ul class="department-main">
+        <li class="department-unit" ng-repeat="i in currentArr" ng-click="saveCode(i)">
+            <a href="#list/{{i.organCode}}">{{i.description}}</a>
+        </li>
+    </ul>
+</div>
+

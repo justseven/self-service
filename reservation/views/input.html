@@ -1,0 +1,14 @@
+<div class="reservation_box">
+    <p>第一步：请将您的身份证放置在证件扫描区</p>
+    <p>系统会自动验证您的身份信息</p>
+    <p><img id="img" style="width:50%;" src="../libs/common/images/card.gif" alt="" /></p>
+    <p>第二步：请输入您的手机号码</p>
+    <div class="phoneBg">
+        <input type="text" ng-model="phoneNumber" id="phoneNumber" class="phoneinput" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')"/>
+    </div>
+    <p>
+        <a  ng-click="returnDate()"><img src="images/{{returnUpImg}}.png" width="240" height="80" alt=""/></a>
+        <a  ng-click="orderSubmit();"><img src="images/{{orderSubmitImg}}.png" alt="" style="padding-left:100px;" /></a>
+    </p>
+</div>
+

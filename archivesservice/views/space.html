@@ -1,0 +1,108 @@
+<div class="spaceWrap">
+    <nav>
+        <ul class="navTabs">
+            <li ng-click="changeTabs(i.id)"ng-repeat="i in tabsItem" class="tabBg" ng-class="{'tabBgSelected':selected==i.id}">
+                <a class="tabFont">{{i.name}}</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="contWrap">
+            <div class="leftBtn" ><a ng-click="prevPage()" ng-show="totalPages>1"></a></div>
+            <ul class="mainContent">
+                <li class="firstList" ng-if="selectedList == 1">
+                    <ul>
+                        <li ng-repeat="i in firstInfo |limitTo :10">
+                            <span>{{i.key}}</span><span>{{i.val}}</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="secondList" ng-if="selectedList == 2">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>资质类型</td>
+                                <td>有效日期(起)</td>
+                                <td>有效日期(止)</td>
+                                <td>法定代表人</td>
+                            </tr>
+                            <tr ng-repeat="i in secondInfo">
+                                <td>{{i.license_type}}</td>
+                                <td>{{i.start_date}}</td>
+                                <td>{{i.end_date}}</td>
+                                <td>{{i.person_name}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="thirdList" ng-if="selectedList == 3">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>处罚通知书编号</td>
+                            <td>处罚机关</td>
+                            <td>处罚决定时间</td>
+                        </tr>
+                        <tr ng-repeat="i in thirdInfo">
+                            <td>{{i.punish_code}}</td>
+                            <td>{{i.punish_unit}}</td>
+                            <td>{{i.punish_date}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="fourthList" ng-if="selectedList == 4">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>信息类别</td>
+                            <td>行政机构</td>
+                            <td>事项名称</td>
+                            <td>法人名称</td>
+                        </tr>
+                        <tr ng-repeat="i in fourthInfo">
+                            <td>{{i.xxlb}}</td>
+                            <td>{{i.xzjg}}</td>
+                            <td>{{i.sxmc}}</td>
+                            <td>{{i.frmc}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="sixthList" ng-if="selectedList == 6">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>法人名称</td>
+                            <td>事项名称</td>
+                            <td>申请类型</td>
+                            <td>办结结果</td>
+                        </tr>
+                        <tr ng-repeat="i in sixthInfo">
+                            <td>{{i.applicant}}</td>
+                            <td>{{i.affair_name}}</td>
+                            <td>{{i.submit_type}}</td>
+                            <td>{{i.result}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="eighthList" ng-if="selectedList == 8" >
+                    <a class="frUpload" ng-click="uploadNewPhoto()"><img src="images/btn_upload.png" alt=""/></a>
+                    <a class="frDelete" ng-show="btnDeleted" ng-click="deletedPhoto()"><img src="images/btn_del.png" alt=""/></a>
+                    <a class="frPrint"  ng-show="btnDeleted" ng-click="printPhoto()"><img src="images/btn_print.png" alt=""/></a>
+                    <ul class="licenseWrap">
+                        <li class="licenseBox" ng-repeat="i in frLicData" >
+                            <img id="{{i.stPersonalDocument}}page1" ng-click="checkedIt(i.stPersonalDocument)" ng-src="{{configUrl+i.imageUrl}}"/>
+                            <p>{{i.stFilename}}</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="rightBtn" ><a ng-click="nextPage()" ng-show="totalPages>1"></a></div>
+        </div>
+        <p class="botContent" ng-show="totalPages>1">
+            <span>{{currentPage}}</span>/<span>{{totalPages}}</span>
+        </p>
+    </section>
+</div>

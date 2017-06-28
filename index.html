@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>自助服务终端-首页</title>
+		<link rel="stylesheet" href="libs/common/css/common.css">
+		<link rel="stylesheet" href="libs/common/css/all.css">
+	</head>
+
+	<body ondragstart="return false;" onselectstart="return false">
+		<div class="content_box">
+			<!--content 1280x1024 start-->
+
+
+			<!--logo start-->
+			<div class="title_box">
+				<div class="logo">
+					<img />
+				</div>
+			</div>
+			<!--logo end-->
+
+			<!--nane start-->
+			<div class="name_box"></div>
+			<!--nane end-->
+
+			<!--模块开始-->
+			<div class="mokuai_box">
+				<ul>
+					<li class="li_wd333">
+						<a href="eventquery/index.html">
+							<p>Event Query</p>
+							<img src="libs/common/images/eventquery.png" width="120" height="120">
+							<span>办事查询</span></a>
+					</li>
+					<li class="li_wd333">
+						<a href="declare/index.html">
+							<p>Internet Declare</p>
+							<img src="libs/common/images/eventquery.png" width="120" height="120">
+							<span>网上申报</span></a>
+					</li>
+					<li class="li_wd333">
+						<a href="reservation/index.html">
+							<p>Appointment</p>
+							<img src="libs/common/images/reservation.png" width="120" height="120">
+							<span>办事预约</span></a>
+					</li>
+					<li class="li_wd500">
+						<a href="archivesservice/index.html">
+							<p>Archives</p>
+							<img src="libs/common/images/bsAchives.png" width="120" height="120">
+							<span>办事档案</span></a>
+					</li>
+					<li class="li_wd500">
+						<a href="autoform/index.html">
+							<p>Electronic Form</p>
+							<img src="libs/common/images/chooseForm.png" width="120" height="120">
+							<span>自助取表</span></a>
+					</li>
+					<li class="li_wd500">
+						<a href="materialcopy/index.html">
+							<p>Material Copy</p>
+							<img src="libs/common/images/materialCopy.png" width="120" height="120">
+							<span>材料复印</span></a>
+					</li>
+					<li class="li_wd500">
+						<a href="idcardcopy/index.html">
+							<p>ID Card Copy</p>
+							<img src="libs/common/images/IDcardCopy.png" width="120" height="120">
+							<span>身份证复印</span></a>
+					</li>
+				</ul>
+			</div>
+			<!--模块结束-->
+
+		</div>
+		<!--content 1280x1024 end-->
+		<script src="libs/jquery/jquery-1.8.1.min.js"></script>
+		<script src="libs/angularjs/1.5.8/angular.js"></script>
+		<script src="libs/angularjs/1.5.8/angular-route.js"></script>
+		<script src="libs/common/js/init-config-msg.js"></script>
+	</body>
+</html>
+<!--鼠标经过图片变淡-->
+<script type="text/javascript">
+	$(function() {
+		$('img').each(function() {}).hover(function() {
+				$(this).animate({
+					opacity: 0.5
+				});
+			},
+			function() {
+				$(this).animate({
+					opacity: 1
+				});
+			});
+	});
+	$(".logo>img").attr("src", $.getConfigMsg.logoIcon);
+</script>

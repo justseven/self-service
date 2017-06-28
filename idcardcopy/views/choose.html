@@ -1,0 +1,19 @@
+<div class="copy_box">
+    <ul class="chooseBox">
+        <li>
+            <img src="{{frontImgUrl}}"/>
+            <img src="{{reverseImgUrl}}"/>
+        </li>
+        <li>
+            <p class="fwn">请选择您要打印的份数</p>
+        </li>
+        <li class="additionalCopies">
+            <a ng-click="minus()"><img src="images/btjian.png" alt="" /></a>
+            <span>{{printNums}}</span>
+            <a ng-click="add()"><img src="images/btjia.png" alt="" /></a>
+        </li>
+        <li>
+            <a ng-click="payJudge()"><img src="images/btnprint.png" alt="" /></a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,53 @@
+<div class="content-wrap">
+    <div class="content-nav">
+        <a href="" ng-style="guideStyle" ng-click="chooseLabel(0)">事项指南</a>
+        <a href="" ng-style="informStyle" ng-click="chooseLabel(1)" ng-show="inform">事项告知单</a>
+    </div>
+    <div class="content-main">
+        <div class="content-guide" ng-show="contentGuide">
+            <h3>{{guideTitle}}</h3>
+            <h4>一、适用范围：</h4>
+            <div ng-bind-html="clRange"></div>
+            <h4>二、事项名称和代码：</h4>
+            <div ng-bind-html="clNameCode"></div>
+            <h4>三、办理依据：</h4>
+            <div ng-bind-html="clDealAccording"></div>
+            <h4>四、办理机构：</h4>
+            <div ng-bind-html="clDealOrgan"></div>
+            <h4>五、审批条件：</h4>
+            <div ng-bind-html="clApprovalConds"></div>
+            <h4>六、审批数量：</h4>
+            <div ng-bind-html="clApprovalCount"></div>
+            <h4>七、审批材料：</h4>
+            <div ng-bind-html="clApprovalMater"></div>
+            <h4>八、审批期限：</h4>
+            <div ng-bind-html="clApprovalLimit"></div>
+            <h4>九、审批证件：</h4>
+            <div ng-bind-html="clApprovalCert"></div>
+            <h4>十、收费标准：</h4>
+            <div ng-bind-html="clChargeStd"></div>
+            <h4>十一、申请人权利及义务：</h4>
+            <div ng-bind-html="clApplyRightsDuties"></div>
+            <h4>十二、申请接受：</h4>
+            <div ng-bind-html="clApplyReceive"></div>
+            <h4>十三、咨询途径：</h4>
+            <div ng-bind-html="clConsultWay"></div>
+            <h4>十四、投诉渠道：</h4>
+            <div ng-bind-html="clComplaintChannel"></div>
+            <h4>十五、办理方式：</h4>
+            <div ng-bind-html="clDealType"></div>
+            <h4>十六、决定公开：</h4>
+            <div ng-bind-html="clDecidedOpen"></div>
+        </div>
+        <div class="content-inform" ng-bind-html="informCont" ng-show="contentInform">
+
+        </div>
+        <div class="content-side">
+            <a class="side-up" ng-click="moveUp()"><img src="images/btn_up.png" alt=""/></a>
+            <a class="side-down" ng-click="moveDown()"><img src="images/btn_down.png" alt=""/></a>
+        </div>
+    </div>
+    <div class="content-foot">
+        <a href="#list/{{organCode}}"><img src="images/btn_back.png" /></a>
+    </div>
+</div>

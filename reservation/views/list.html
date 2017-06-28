@@ -1,0 +1,18 @@
+<div class="reservation_box">
+    <ul class="listWrap">
+        <li><a class="abtn aleft" ng-click="previousPage()"></a></li>
+        <li>
+            <p>办理事项</p>
+            <ul class="listMain">
+                <li ng-repeat="i in currentArr" ng-click="inOrderTime(i)">{{i.stItemName}}</li>
+            </ul>
+        </li>
+        <li><a class="abtn aright" ng-click="nextPage()"></a></li>
+    </ul>
+    <p class="pageBox"><span>{{currentPage}}/{{totalPages}}</span></p>
+    <div>
+        <a href="#main">
+            <img src="images/{{returnUpImg}}.png"  alt=""/>
+        </a>
+    </div>
+</div>

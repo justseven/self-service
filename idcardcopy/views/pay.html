@@ -1,0 +1,29 @@
+<div class="copy_box">
+    <p class="fwn">您本次选择复印页数：<span>{{printNums}}</span>页    本次复印所需金额<span>{{prices}}</span>元</p>
+    <div class="pay">
+        <ul class="payType">
+            <li>
+                <a  class="wechat" ng-click="wechat()">
+                    <img src="images/{{weixin}}.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a  class="alipay" ng-click="alipay()">
+                    <img src="images/{{alp}}.png" alt=""/>
+                </a>
+            </li>
+        </ul>
+        <div class="qrCodeDisplay">
+            <p class="black">请扫描下方二维码支付复印费用</p>
+            <div class="qrCodeBox">
+                <img class="qrCodeIcon" src="images/{{payTypeIcon}}.png"/>
+                <img  src="{{qrCode}}"/>
+            </div>
+        </div>
+        <p>
+            <img src="images/point.png" alt="" />
+            <span>您支付完成后，如果30分钟尚未打印，我们会将您支付的金额返还到您的支付账号</span>
+        </p>
+    </div>
+    <a href="#choose"><img src="images/{{returnUpImg}}.png"/></a>
+</div>
